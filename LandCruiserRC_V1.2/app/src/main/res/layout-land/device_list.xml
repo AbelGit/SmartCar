@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--已经配对的-->
+    <TextView
+        android:id="@+id/title_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="配对的设备"
+        android:textColor="#fff"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:stackFromBottom="true"/>
+
+    <!--扫描新设备-->
+    <Button
+        android:id="@+id/scan_new_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描新设备"/>
+
+    <!--新配对的-->
+    <TextView
+        android:id="@+id/title_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"
+        android:paddingLeft="5dp"
+        android:text="其他可用的设备"
+        android:textColor="#fff"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:stackFromBottom="true"/>
+
+</LinearLayout>
